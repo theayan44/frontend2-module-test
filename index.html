@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Cookpal Recipes</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="main-container">
+        <h3>Search For Recipes</h3>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search for recipes..." class="search-input" onkeyup="handleSearch(this)">
+            <button class="material-icons">
+                search
+            </button>
+        </div>
+
+        <div class="filter-buttons-container">
+            <button onclick="handleClick(this)" id="all"><span>All Recipes</span><span>></span></button>
+            <button onclick="handleClick(this)" id="veg"><span>Veg Recipes
+                    Only</span><span>></span></button>
+            <button onclick="handleClick(this)" id="non-veg"><span>Non Veg
+                    Recipes</span><span>></span></button>
+        </div>
+
+        <div class="menu-container">
+            <div class="filter-container">
+                <h3>Filters</h3>
+                <div style="padding-left: 0px;" class="main-filter">
+                    <h4 style="margin-bottom: 5px;">Rating</h4>
+                    <div>
+                        <span><input type="checkbox" class="filter-input" onchange="handleFilter()">4 and Above</span>
+                        <span><input type="checkbox" class="filter-input" onchange="handleFilter()">Below 4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-container">
+                <!-- <div class="card">
+                    <img src="https://source.unsplash.com/random?veggies" alt="image">
+                    <div class="recipe-details">
+                        <span>Veg</span>
+                        <div>
+                            <h3 style="margin: 0;">Russian Salad</h3>
+                            <div>
+                                <i class="material-icons" id="star-icon">star_rate</i>
+                                4.5
+                            </div>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; color: rgb(218, 2, 2);">40 min</h3>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <i class="material-icons">mode_comment</i>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
